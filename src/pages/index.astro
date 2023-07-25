@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Cube from '../components/Cube.jsx';
 import Scene from '../components/Scene';
 ---
 
@@ -11,7 +10,7 @@ import Scene from '../components/Scene';
 			<h1>Welcome to <span class="text-gradient">Alkimera Demos Page</span></h1>
 		</div>
 		<div class="border border-[red] h-screen w-full">
-			<Cube client:load />
+			<Scene client:load />
 			<!-- <Scene client:load /> -->
 		</div>
 	</main>

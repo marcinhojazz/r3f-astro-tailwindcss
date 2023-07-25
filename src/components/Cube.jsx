@@ -1,16 +1,11 @@
-import React from 'react';
-import { Canvas, useThree } from '@react-three/fiber';
-import { Box, OrbitControls } from '@react-three/drei';
-import { PlaneGeometry } from 'three';
+import { Box } from '@react-three/drei';
 
 export default function Cube() {
   return (
-    <Canvas>
-    <ambientLight />
-    <OrbitControls />
-      <Box>
+    <>
+      <Box position={[0, 0, 0]} rotation-x={[Math.PI * 0.5]} receiveShadow>
         <meshStandardMaterial color="hotpink" />
       </Box>
-    </Canvas>
+    </>
   );
 }
